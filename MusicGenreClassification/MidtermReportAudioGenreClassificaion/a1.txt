@@ -1,0 +1,36 @@
+
+
+
+audioread('artist_1_album_1_track_1.mp3')
+
+[a,fs]=audioread('artist_1_album_1_track_1.mp3');
+
+plot(a(1:100000),1)
+
+sound(a(1:100000),fs)
+>> p=audioplayer(a,fs);
+>> play(p)
+>> pause(p)
+>> start(p)
+Undefined function 'start' for input arguments of type 'audioplayer'.
+ 
+>> resume(p)
+>> stop(p)
+
+
+
+
+load handel.mat
+>> audiowrite('a1.wav',y,Fs)
+>> info=audioinfo(a1.wav)
+
+>> [y,Fs]=audioread('a1.wav')
+
+
+
+>> load artist_1_album_1_track_1.mp3
+
+>> audiowrite('art1.wav',y,Fs)
+>> [y,Fs]=audioread('art1.wav')
+
+>> info=audioinfo('art1.wav')
